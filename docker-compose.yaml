@@ -4,5 +4,6 @@ services:
   plumber:
     build: .
     image: hello-plumber:local
+    # entrypoint: ["tail", "-f", "/dev/null"]
     ports:
       - "8000:8000"
